@@ -8,6 +8,7 @@ authors = ["husky <huskyhacks.mk@gmail.com>"]
 python = "^3.8"
 jupyterlab = "^3.2.6"
 jupyter = "^1.0.0"
+JLDracula = "^0.1.0"
 
 [tool.poetry.dev-dependencies]
 
