@@ -9,6 +9,7 @@ python = "^3.8"
 jupyterlab = "^3.2.6"
 jupyter = "^1.0.0"
 JLDracula = "^0.1.0"
+pefile = "^2021.9.3"
 
 [tool.poetry.dev-dependencies]
 
