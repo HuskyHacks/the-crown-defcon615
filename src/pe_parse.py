@@ -33,3 +33,4 @@ for entry in pe.DIRECTORY_ENTRY_IMPORT:
         print("[*] Kernel32.dll imports:")
         for func in entry.imports:
             print("\t%s at 0x%08x" % (func.name.decode('utf-8'), func.address))
+
