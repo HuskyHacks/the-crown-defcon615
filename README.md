@@ -1,4 +1,10 @@
 # the-crown-defcon615
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/57866415/149668922-0e0be26e-a174-4a2c-99e8-607d0cbe9883.png">
+</p>
+
+
 Repo for "The Crown: Exploratory Analysis of Nim Malware" DEF CON 615 talk
 
 ## Instructions
