@@ -13,29 +13,29 @@ This entire talk is a series of Jupyter Notebooks!
 To use this repo, you can do one of two things. The Notebooks offer a guided walkthrough of Nim research, and you can simply read and interact with them entirely in Jupyter Notebooks. But if you want the most out of the material, you can set up a mini malware analysis workstation, examine the code, examine the binaries, all kinds of stuff! It's up to you. 
 
 ### If you want to do just the stuff in the notebooks...
-Clone this repo:
+- Clone this repo:
 ```
 $ git clone https://github.com/HuskyHacks/the-crown-defcon615.git && cd the-crown-defcon615
 ```
-Install pip3 (if you don't already have it)
+- Install pip3 (if you don't already have it)
 
 Example on Linux:
 ```
 $ sudo apt-get install python3-pip
 ```
-Install `poetry`:
+- Install `poetry`:
 ```
 $ pip3 install poetry
 ```
-Enter a Poetry shell:
+- Enter a Poetry shell:
 ```
 $ poetry shell
 ```
-From the poetry shell, install all the project dependencies:
+- From the poetry shell, install all the project dependencies:
 ```
 $ poetry install
 ```
-Start Jupyter Lab!
+- Start Jupyter Lab!
 ```
 $ jupyter lab main.ipynb
 ```
