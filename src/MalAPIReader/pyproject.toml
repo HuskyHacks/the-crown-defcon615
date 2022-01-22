@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "malapireader"
+version = "0.1.0"
+description = ""
+authors = ["husky <huskyhacks.mk@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pefile = "^2021.9.3"
+requests = "^2.27.1"
+bs4 = "^0.0.1"
+colorama = "^0.4.4"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
