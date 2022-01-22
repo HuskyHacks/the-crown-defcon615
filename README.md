@@ -17,12 +17,16 @@ Clone this repo:
 ```
 $ git clone https://github.com/HuskyHacks/the-crown-defcon615.git && cd the-crown-defcon615
 ```
+Install pip3 (if you don't already have it)
 
+Example on Linux:
+```
+$ sudo apt-get install python3-pip
+```
 Install `poetry`:
 ```
 $ pip3 install poetry
 ```
-
 Enter a Poetry shell:
 ```
 $ poetry shell
