@@ -58,3 +58,7 @@ All **compiled binaries** available in this repo are designed to be completely h
 - One is a simple echo server.
 
 The source code for all compiled binaries is available in the `samples/src/` directory and you are free to inspect the code as you wish.
+
+Also note that there is source code in that directory that has more weaponizable/dangerous functionality (i.e. `createremotethread.nim`). Though each of the samples are not fully weaponized (pops calc.exe instead of a Cobalt Strike beacon) I have not compiled any source that I've deemed unsafe for this presentation.
+
+I'll leave it as an exercise for the reader to fully weaponize any of the source code in this repository for research purposes only.
