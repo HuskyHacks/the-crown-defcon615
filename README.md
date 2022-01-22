@@ -27,9 +27,13 @@ Example on Linux:
 ```
 $ sudo apt-get install python3-pip
 ```
-- Install `poetry`:
+- Install `poetry` and add it to your path (rebooting after the pip install makes this way faster):
 ```
 $ pip3 install poetry
+[example for a user with a Bash shell]
+$ echo "export PATH=$PATH:$HOME/.local/bin/" >> ~/.bashrc
+$ source ~/.bashrc
+(or, exit and open a new terminal)
 ```
 - Enter a Poetry shell:
 ```
