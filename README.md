@@ -18,7 +18,7 @@ But if you want the most out of the material, you can set up a mini malware anal
 ## 🐋 Oh Snap It's Dockerized? Docker Quickstart
 For those of you who are down with the Whale:
 ```
-git clone https://github.com/HuskyHacks/the-crown-defcon615.git && cd the-crown-defcon615
+$ git clone https://github.com/HuskyHacks/the-crown-defcon615.git && cd the-crown-defcon615
 $ sudo docker build -t thecrown .
 $ sudo docker run -t -p 8888:8888 -p 1738:1738
 ```
