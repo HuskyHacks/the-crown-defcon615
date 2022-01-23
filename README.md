@@ -9,13 +9,19 @@ Repo for "The Crown: Exploratory Analysis of Nim Malware" DEF CON 615 talk
 ## Instructions
 This entire talk is a series of Jupyter Notebooks!
 
-To use this repo, you can do one of two things.
+### Just browsing the GitHub repo?
+Want to check it out but don't want to download and set everything up? Just click on [`main.ipynb`](https://github.com/HuskyHacks/the-crown-defcon615/blob/main/main.ipynb) and the Jupyter Notebook will render in your browser through the GitHub page. You won't be able to run any code but you can view the notebooks that way.
 
-The Notebooks offer a guided walkthrough of Nim research, and you can simply read and interact with them entirely in Jupyter Notebooks. Think of it like an interactive museum exhibit or science fair project!
+### Want to download and set it up?
+Follow the instructions in the Setup section. You can do one of two things:
 
-But if you want the most out of the material, you can set up a mini malware analysis workstation, examine the code, examine the binaries, all kinds of stuff! It's up to you. 
+- The Notebooks offer a guided walkthrough of Nim research, and you can simply read and interact with them entirely in Jupyter Notebooks. Think of it like an interactive museum exhibit or science fair project!
+- But if you want the most out of the material, you can set up a mini malware analysis workstation, examine the code, examine the binaries, all kinds of stuff! It's up to you. 
 
-## 🐋 Oh Snap It's Dockerized? Docker Quickstart
+
+## Setup
+
+### 🐋 Oh Snap It's Dockerized? Docker Quickstart
 For those of you who are down with the Whale:
 ```
 $ git clone https://github.com/HuskyHacks/the-crown-defcon615.git && cd the-crown-defcon615
@@ -24,7 +30,7 @@ $ sudo docker run -t -p 8888:8888 -p 1738:1738 thecrown:latest
 ```
 Then, copy and paste the URL into your browser.
 
-## Install From Source
+### Install From Source
 ### If you want to do just the stuff in the notebooks...
 - Clone this repo:
 ```
