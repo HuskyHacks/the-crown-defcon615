@@ -4,7 +4,6 @@
 <img src="https://user-images.githubusercontent.com/57866415/149668922-0e0be26e-a174-4a2c-99e8-607d0cbe9883.png">
 </p>
 
-
 Repo for "The Crown: Exploratory Analysis of Nim Malware" DEF CON 615 talk
 
 ## Instructions
@@ -16,6 +15,15 @@ The Notebooks offer a guided walkthrough of Nim research and you can simply read
 
 But if you want the most out of the material, you can set up a mini malware analysis workstation, examine the code, examine the binaries, all kinds of stuff! It's up to you. 
 
+## 🐋 Oh Snap It's Dockerized? Docker Quickstart
+For those of you who are down with the Whale:
+```
+git clone https://github.com/HuskyHacks/the-crown-defcon615.git && cd the-crown-defcon615
+$ sudo docker build -t thecrown .
+$ sudo docker run -t -p 8888:8888 -p 1738:1738
+```
+
+## Install From Source
 ### If you want to do just the stuff in the notebooks...
 - Clone this repo:
 ```
