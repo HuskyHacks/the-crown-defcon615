@@ -11,7 +11,7 @@ This entire talk is a series of Jupyter Notebooks!
 
 To use this repo, you can do one of two things.
 
-The Notebooks offer a guided walkthrough of Nim research and you can simply read and interact with them entirely in Jupyter Notebooks. Think of it like an interactive museum exhibit or science fair project!
+The Notebooks offer a guided walkthrough of Nim research, and you can simply read and interact with them entirely in Jupyter Notebooks. Think of it like an interactive museum exhibit or science fair project!
 
 But if you want the most out of the material, you can set up a mini malware analysis workstation, examine the code, examine the binaries, all kinds of stuff! It's up to you. 
 
@@ -39,12 +39,14 @@ $ sudo apt-get install python3-pip
 - Install `poetry` and add it to your path (rebooting after the pip install makes this way faster):
 ```
 $ pip3 install poetry
+
 [example for a user with a Bash shell]
 $ echo "export PATH=$PATH:$HOME/.local/bin/" >> ~/.bashrc
 $ source ~/.bashrc
+
 (or, exit and open a new terminal)
 ```
-- Enter a Poetry shell:
+- Enter a Poetry shell (must be in the main repo directory if not already):
 ```
 $ poetry shell
 ```
