@@ -20,8 +20,9 @@ For those of you who are down with the Whale:
 ```
 $ git clone https://github.com/HuskyHacks/the-crown-defcon615.git && cd the-crown-defcon615
 $ sudo docker build -t thecrown .
-$ sudo docker run -t -p 8888:8888 -p 1738:1738
+$ sudo docker run -t -p 8888:8888 -p 1738:1738 thecrown:latest
 ```
+Then, copy and paste the URL into your browser.
 
 ## Install From Source
 ### If you want to do just the stuff in the notebooks...
